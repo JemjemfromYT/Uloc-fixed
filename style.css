@@ -1,0 +1,165 @@
+body {
+    font-size: 15pt;
+    opacity: 1;
+    transition: 2s;
+}
+
+#show{
+    display: none;
+}
+
+#chenyao{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    bottom: 150px;
+    left: 75px;
+    z-index: -2;
+    opacity: 0;
+    transition: 1s;
+}
+
+#chenyao2{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    bottom: 150px;
+    left: 75px;
+    z-index: -2;
+    opacity: 0;
+    transition: 1s;
+}
+
+#milk{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    bottom: 250px;
+    left: 125px;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.egg1{
+    height: 70px;
+    width: 70px;
+    background: burlywood;
+    border-radius: 50%;
+    position: fixed;
+    left: 10px;
+    animation-name: eggName1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.egg2{
+    height: 70px;
+    width: 70px;
+    background: burlywood;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    animation-name: eggName2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.stick{
+    position: absolute;
+    background: brown;
+    height: 200px;
+    width: 50px;
+    border-radius: 20%;
+}
+
+.head{
+    z-index: 1;
+    background: hotpink;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 180px;
+}
+
+.headLine{
+    z-index: 2;
+    background: black;
+    width: 1px;
+    height: 10px;
+    position: absolute;
+    top: 199px;
+    left: 25px;
+}
+
+.hotdog{
+    position: fixed;
+    left: 153px;
+    bottom: -50%;
+    animation-name: hotdogName;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+
+.gun{
+    position: fixed;
+    animation-name: gunName;
+    animation-delay: 6s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.hotdog.follow{
+    position: fixed;
+    animation-name: gunNameFollow;
+    animation-duration: 2s;
+    animation-delay: 0s ;
+    animation-fill-mode: forwards;
+}
+
+h4{
+    position: absolute;
+    bottom: 200px;
+    opacity: 1;
+    transition: 2s;
+    background: pink;
+    color: white;
+}
+
+@keyframes eggName1{
+  0%{left: 0px}
+  100%{left: 100px}
+}
+
+@keyframes eggName2{
+  0%{right: 0px}
+  100%{right: 100px}
+}
+
+@keyframes hotdogName {
+    0%{bottom: 0%}
+    100%{bottom: 98.6%}
+}
+
+@keyframes gunName{
+    0%{bottom: 98.6%}
+    100%{bottom: 78.6%}
+}
+
+button{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+}
+
+
+@keyframes gunNameFollow{
+    0%{bottom: 98.6%}
+    100%{bottom: 78.6%}
+}
