@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function(){
 let hotdogId = document.getElementById ("hotdogId")
 let ahh = document.getElementById ("ahh")
 let chenyaoVoice = document.getElementById ("chenyaoVoice")
@@ -5,6 +6,10 @@ let createdBy = document.getElementById ("createdBy")
 let go = document.getElementById ("go")
 let show = document.getElementById ("show")
 
+squirt.pause()
+reload.pause()
+boom.pause()
+alert("Cautious: sexual website not reccomend to open")
 
 go.addEventListener('click', function(){
 show.style.display="block"
@@ -41,5 +46,7 @@ setTimeout(()=>{
 },1300);
 },1300);
 },8000);
+
+});
 
 });
